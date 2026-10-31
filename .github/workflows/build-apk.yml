@@ -20,10 +20,10 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 21 - 
-          uses: android-actions/setup-android@ 
-          name: Create Capacitor project
-         run: |
+          java-version: 21
+
+      - name: Create Capacitor project
+        run: |
           mkdir www
           cp index.html www/index.html
           npm init -y
